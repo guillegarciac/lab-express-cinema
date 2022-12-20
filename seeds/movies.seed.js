@@ -1,3 +1,7 @@
+//a diferencia de db/index.js, este archivo no se require en app.js
+//es importante para poder hacer las rutas de /GET
+//las const se repiten pero es OK.
+
 const mongoose = require ("mongoose");
 const Movie = require ("../models/Movie.model");
 const MONGODB_URI = 'mongodb://localhost:27017/lab-express-cinema';

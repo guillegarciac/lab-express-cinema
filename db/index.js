@@ -1,6 +1,7 @@
 // ℹ️ package responsible to make the connection with mongodb
 // https://www.npmjs.com/package/mongoose
 const mongoose = require("mongoose");
+mongoose.set('strictQuery', true);
 
 // ℹ️ Sets the MongoDB URI for our app to have access to it.
 // If no env has been set, we dynamically set it to whatever the folder name was upon the creation of the app
@@ -15,3 +16,16 @@ mongoose
   .catch((err) => {
     console.error("Error connecting to mongo: ", err);
   });
+
+
+//Code from Ale's class
+/* const mongoose = require ("mongoose");
+const MONGODB_URI = 'mongodb://localhost:27017/lab-express-cinema';
+
+
+mongoose
+  .connect(MONGODB_URI)
+  .then(response => console.log(`Connected to the database: "${response.connection.name}"`))
+  .catch(error => {
+    console.error('Error connecting to the database', error);
+  }); */
