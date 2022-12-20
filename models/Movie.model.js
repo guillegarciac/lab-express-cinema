@@ -8,7 +8,10 @@ const movieSchema = new Schema({
   },
   director: String,
   stars: [String],
-  image: String,
+  image: {
+    type: String,
+    default: 'https://www.genius100visions.com/wp-content/uploads/2017/09/placeholder-vertical.jpg'
+  },
   description: String,
   showtimes: [String]
 })
