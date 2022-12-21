@@ -12,4 +12,16 @@ router.get ("/", async (req,res,next) => {
   }
 })
 
+/* GET one movie */
+/* ROUTE /movies/:movieId */
+router.get ("/:movieId", async (req,res,next) => {
+  const { movieId } = req.params;
+  try {
+    const movie = await Movie.findById(movieId);
+    res.render("movieDetails", { movie });
+  } catch (error) {
+    next(error);
+  }
+})
+
 module.exports = router;

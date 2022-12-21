@@ -69,10 +69,32 @@ body#movies-bg {
 }
 
 .movie-card:first-child {
+  margin-top: 75px;
+  }
+  
+.movie-card:last-child {
+margin-bottom: 75px;
+}
+
+.movie-card-expanded {
+  width: 75%;
+  position: relative;
+  max-width: 800px;
+  margin: auto;
+  background: #fff;
+  box-shadow: 0px 14px 80px rgb(34 35 58 / 20%);
+  padding: 22px;
+  border-radius: 25px;
+  height: 680px;
+  display: flex;
+  margin-top: 10px;
+}
+
+.movie-card-expanded:first-child {
 margin-top: 75px;
 }
 
-.movie-card:last-child {
+.movie-card-expanded:last-child {
 margin-bottom: 75px;
 }
 

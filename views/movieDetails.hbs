@@ -1,0 +1,24 @@
+<body id="movies-bg">
+  <header>
+    <nav id="nav-bar">
+      <a href="/movies">← Go back to List</a>
+    </nav>
+  </header>
+  <div>
+    {{#with movie}}
+      <div class="movie-card-expanded">
+        <div class="card-expanded-container-movie">
+          <img height="250" src="{{image}}" alt="{{title}}"/>
+        </div>  
+        <div class="card-container">
+          <h2>{{title}}</h2>
+          <p>Director:<br>{{director}}</p>
+          <p>Description:<br>{{description}}</p>
+          <p>Rating:<br>{{stars}}</p>
+          <p>Showtime:<br>{{showtimes}}</p>
+        </div>
+     </div>
+    {{/with}} 
+  </div>
+</body>
+
