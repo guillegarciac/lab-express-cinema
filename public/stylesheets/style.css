@@ -17,10 +17,11 @@ h1 {
   text-align: left;
 }
 
-button {
+a {
   color: rgb(18, 18, 103);
   background-color: white;
   padding: 10px 20px;
   border-radius: 50px;
   font-size: 2rem;
+  text-decoration: none;
 }
