@@ -22,7 +22,6 @@ mongoose
 /* const mongoose = require ("mongoose");
 const MONGODB_URI = 'mongodb://localhost:27017/lab-express-cinema';
 
-
 mongoose
   .connect(MONGODB_URI)
   .then(response => console.log(`Connected to the database: "${response.connection.name}"`))
