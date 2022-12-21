@@ -1,4 +1,4 @@
-body {
+body#home-bg {
   padding: 100px;
   font: 95px "Lucida Grande", Helvetica, Arial, sans-serif;
   color: white;
@@ -6,6 +6,11 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+body#movies-bg {
+  background-color: red;
+}
+
 #menu-container {
   padding-left:500px;
 }

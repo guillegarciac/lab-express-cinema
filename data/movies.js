@@ -1,3 +1,6 @@
+//The Seed is no trequired upond /db/index.js
+//We use the seed to create the DB and then db will consume from it.
+
 module.exports = [
   {
     title: "A Wrinkle in Time",
