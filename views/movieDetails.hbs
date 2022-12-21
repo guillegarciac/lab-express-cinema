@@ -8,14 +8,19 @@
     {{#with movie}}
       <div class="movie-card-expanded">
         <div class="card-expanded-container-movie">
-          <img height="250" src="{{image}}" alt="{{title}}"/>
+          <img height="350" src="{{image}}" alt="{{title}}"/>
         </div>  
         <div class="card-container">
           <h2>{{title}}</h2>
           <p>Director:<br>{{director}}</p>
           <p>Description:<br>{{description}}</p>
-          <p>Rating:<br>{{stars}}</p>
-          <p>Showtime:<br>{{showtimes}}</p>
+          <p>Main Actors:</p>
+          <ul>
+            <li>{{stars.[0]}}</li>
+            <li>{{stars.[1]}}</li>
+            <li>{{stars.[2]}}</li>
+          </ul>
+          <p>Showtimes:<br>{{showtimes.[0]}} | {{showtimes.[1]}}  | {{showtimes.[2]}}  | {{showtimes.[3]}}  | {{showtimes.[4]}}</p>
         </div>
      </div>
     {{/with}} 
