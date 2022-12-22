@@ -57,6 +57,10 @@ body#movies-bg {
   margin-bottom: 40px;
 }
 
+#movies-main p {
+  margin-bottom: 20px;
+}
+
 /* MOVIES CARDS */
 .movie-card {
   width: 75%;
@@ -149,6 +153,10 @@ font-size: 16px;
   width: 150px;
   justify-content: center;
   align-self: flex-end;
+}
+
+p#not-found {
+  margin-top: 100px;
 }
 
 /* Back Navigation */

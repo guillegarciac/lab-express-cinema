@@ -7,6 +7,11 @@
   <div id="movies-main">
     <h1>Ironhack Cinema</h1>
     <p>Click on the movie to check the showtimes</p>
+    <form method="GET" action="/movies/search"> 
+      <label>Search by title</label>
+      <input type="text" name="title"/>
+      <button type="submit">Search</button>
+    </form>
   </div>
   <div>
     {{#each movies}}

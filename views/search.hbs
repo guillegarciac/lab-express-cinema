@@ -1,0 +1,46 @@
+<body id="movies-bg">
+  <header>
+    <nav id="nav-bar">
+      <a href="/movies">← Go back to List</a>
+    </nav>
+  </header>
+  <h3>Results for: {{query}}</h3>
+  <div>
+    {{#if movie}}
+      {{#with movie}}
+        <div class="movie-card-expanded">
+          <div class="card-expanded-container-movie">
+            <img height="350" src="{{image}}" alt="{{title}}"/>
+          </div>  
+          <div class="card-container">
+            <h2>{{title}}</h2>
+            <p>Director:<br>{{director}}</p>
+            <p>Description:<br>{{description}}</p>
+            <p>Main Actors:</p>
+            <ul>
+              <li>{{stars.[0]}}</li>
+              <li>{{stars.[1]}}</li>
+              <li>{{stars.[2]}}</li>
+            </ul>
+            <p>Showtimes:<br>{{showtimes.[0]}} | {{showtimes.[1]}}  | {{showtimes.[2]}}  | {{showtimes.[3]}}  | {{showtimes.[4]}}</p>
+          </div>
+        </div>
+     {{/with}}
+     {{else}}
+      <div class="movie-card">
+        <div class="card-container-movie">
+          <img height="250" src="/images/not-found.png" alt="not-found"/>
+        </div>  
+        <div class="card-container">
+          <h2>Oops!<br>No movies found for:</h2>
+          <p>{{query}}</p>
+          <p>Try again:</p>
+          <div id="button-see-more">
+            <a href="/movies">Back to movies</a>
+          </div>
+        </div>
+      </div>
+    {{/if}} 
+  </div>
+</body>
+
